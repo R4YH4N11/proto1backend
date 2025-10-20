@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor settings
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Env files / secrets
+.env
+.env.*
+
+# Cache / logs
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Uvicorn reload artifacts
+*.reload
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
