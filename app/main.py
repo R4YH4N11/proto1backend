@@ -12,10 +12,14 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Allow local development frontends; tighten when deploying.
+# Allow the Lovable frontend to call the API.
+origins = [
+    "https://lovable.dev/projects/cfbe1d2e-36a0-4b53-96e5-deefa67b8c41",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
