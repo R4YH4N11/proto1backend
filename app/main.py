@@ -14,6 +14,9 @@ app = FastAPI(
 
 # Allow the Lovable frontend to call the API.
 origins = [
+    "https://*.lovable.app",
+    "https://*.lovable.dev",
+    "https://prtoto12-baap-62350.lovable.app",
     "https://lovable.dev/projects/cfbe1d2e-36a0-4b53-96e5-deefa67b8c41",
 ]
 
